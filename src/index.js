@@ -1,14 +1,16 @@
 // index.js
-import express from "express";
+const express = require('express');
+const path = require('path');
 const app = express();
 const port = "3000";
-var path = require('path');
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
-  res.send("./cat.png");
-  console.log("Response sent");
+  console.log("Response sent"); 
 });
+
+// Serve static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
