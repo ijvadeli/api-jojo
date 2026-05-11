@@ -1,22 +1,23 @@
 {
   "name": "api-jojo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "This is an API for pulling random quotes, gifs and memes of the series JoJo's Bizarre Adventure.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijvadeli/api-jojo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.0.9",
-      "onFail": "download"
-    }
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ijvadeli/api-jojo/issues"
   },
-  "type": "module",
+  "homepage": "https://github.com/ijvadeli/api-jojo#readme",
   "dependencies": {
     "express": "^5.2.1"
   }
