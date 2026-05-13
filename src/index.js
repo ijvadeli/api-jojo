@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.json());
-app.use('/api', routes);
+app.use('/', routes);
 
 // Serve static files
 app.use(express.static(path.join(__dirname, '../public')));
